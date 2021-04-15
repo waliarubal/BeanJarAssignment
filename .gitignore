@@ -100,4 +100,7 @@ Desktop.ini
 .history
 .ionide
 
+**/packages/*
+!**/packages/repositories.config
+
 # End of https://www.toptal.com/developers/gitignore/api/openframeworks+visualstudio,visualstudiocode

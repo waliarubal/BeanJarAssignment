@@ -42,9 +42,13 @@ namespace BeanieApplication
             Flavor = (BeanFlavor)Enum.ToObject(typeof(BeanFlavor), (int)Color); //one to one color matching with flavor
         }
 
+        #region properties
+
         public BeanColor Color { get; set; }
 
         public BeanFlavor Flavor { get; }
+
+        #endregion
 
         public override string ToString()
         {

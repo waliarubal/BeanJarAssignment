@@ -13,9 +13,10 @@ namespace BeanieApplication
 
             InitializeComponent();
 
+            // initializing form controls with default values
             updnCapacity.Minimum = BeanJar.MIN_CAPACITY;
             updnCapacity.Maximum = BeanJar.MAX_CAPACITY;
-            updnCapacity.Value = _random.Next(BeanJar.MIN_CAPACITY, BeanJar.MAX_CAPACITY);
+            updnCapacity.Value = _random.Next(BeanJar.MIN_CAPACITY, BeanJar.MAX_CAPACITY); // generate random capacity for next jar to be added
 
             grpBeanJars.Text = $"Bean Jars - Count: {lstJars.Items.Count}";
         }

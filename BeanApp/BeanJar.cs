@@ -18,7 +18,13 @@ namespace BeanieApplication
             _totalBeanCount = 0;
         }
 
+        #region properties
+
+        public int TotalBeanCount => _totalBeanCount;
+
         public int Capacity { get; set; }
+
+        #endregion
 
         public void AddBean(Bean bean)
         {
@@ -47,7 +53,7 @@ namespace BeanieApplication
                 statisticsBuilder.AppendFormat("> {0} ({3}) - {1} Beans - {2}%{4}", 
                     flavor, 
                     beans.Count, 
-                    (beans.Count * 100) / _totalBeanCount, 
+                    (beans.Count * 100) / TotalBeanCount, 
                     beans[0].Color,
                     Environment.NewLine);
             }
